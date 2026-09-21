@@ -71,7 +71,7 @@ st.sidebar.caption(
 tab1, tab2 = st.tabs(["▶️ Simulacao da sessao", "Comparativo: imediato vs. inteligente"])
 
 # ---------------------------------------------------------------------------
-# ABA 1 — Simulacao de uma sessao de recarga (funcionalidade operacional)
+# ABA 1 — Simulacao de uma sessao de recarga 
 # ---------------------------------------------------------------------------
 with tab1:
     if st.button("Iniciar simulacao de recarga", type="primary"):
@@ -225,8 +225,3 @@ with tab2:
         st.pyplot(fig2)
 
 st.markdown("---")
-st.caption(
-    "Prototipo simulado desenvolvido para fins academicos — arquitetura de referencia "
-    "inspirada no protocolo OCPP (Open Charge Point Protocol). Ver README.md para "
-    "detalhes de arquitetura, diagramas e justificativas tecnicas."
-)
