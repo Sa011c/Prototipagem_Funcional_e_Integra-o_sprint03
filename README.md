@@ -1,8 +1,8 @@
 # Integrantes:
 Anna Luiza Carvalhaes - 573330  
-Gabriela Batista - 573583
-kethelyn Oliveira - 574016
-Samara Carvalho - 573666
+Gabriela Batista - 573583  
+kethelyn Oliveira - 574016   
+Samara Carvalho - 573666   
 
 # Sistema Inteligente de Gerenciamento de Recarga de Veículos Elétricos (VEs)
 ### Protótipo funcional — Sprint 1
