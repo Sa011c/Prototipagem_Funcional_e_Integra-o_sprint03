@@ -185,37 +185,15 @@ O protótipo gera, para cada sessão simulada:
   inteligente, incluindo economia em R$ e ganho de energia solar
   aproveitada (kWh).
 
-Esses dados simulados foram validados manualmente contra as fórmulas de
-energia e tempo (ver seção de testes abaixo), garantindo que a simulação é
-tecnicamente fundamentada e não apenas ilustrativa.
-
 ---
 
 ## 5. Como executar o protótipo
 
 ```bash
-# 1. Criar ambiente virtual (opcional, recomendado)
-python3 -m venv venv
-source venv/bin/activate        # Windows: venv\Scripts\activate
-
-# 2. Instalar dependências
-pip install -r requirements.txt
-
 # 3. Executar a aplicação
 streamlit run app.py
 ```
-
 O navegador abrirá automaticamente em `http://localhost:8501`.
-
-### 5.1 Roteiro sugerido de demonstração
-1. Na aba **"Simulação da sessão"**, ajuste SOC inicial/desejado e clique em
-   **"Iniciar simulação de recarga"** — mostre a notificação de carga
-   concluída, o valor a pagar e o gráfico de evolução do SOC.
-2. Aumente o "Tempo até o usuário retirar o veículo" para acima de 5 min e
-   rode novamente — mostre a taxa de permanência sendo aplicada.
-3. Vá para a aba **"Comparativo: imediato vs. inteligente"**, defina um
-   horário limite mais distante e clique em **"Comparar cenários"** — mostre
-   a economia de custo e o ganho de energia solar aproveitada.
 
 ### 5.2 Validação da lógica (testes manuais)
 As funções de `simulation_core.py` foram validadas com casos de teste
@@ -228,23 +206,3 @@ manuais que conferem:
   o prazo (deadline) informado pelo usuário.
 
 ---
-
-## 6. Limitações do protótipo e próximos passos
-
-- A leitura do SOC e a geração solar são **simuladas** (não há hardware
-  real conectado) — próximo passo natural é integrar um cliente OCPP real.
-- A tarifa branca usa valores **ilustrativos**; uma versão futura poderia
-  buscar tarifas reais publicadas pela distribuidora local via API.
-- O agendamento inteligente usa busca exaustiva simples; um sistema em
-  produção poderia usar otimização mais sofisticada (ex. programação
-  linear) para múltiplos veículos disputando os mesmos pontos de recarga
-  simultaneamente.
-
----
-
-## 7. Vídeo técnico de demonstração
-*(Adicionar aqui o link do vídeo após a gravação — ver roteiro sugerido na
-seção 5.1. O vídeo deve mostrar: (1) o problema e a proposta, (2) a
-simulação de uma sessão de recarga com e sem atraso, (3) o comparativo de
-agendamento inteligente e sua justificativa de sustentabilidade, (4) uma
-conclusão amarrando os resultados aos princípios de energias renováveis.)*
