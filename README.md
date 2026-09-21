@@ -1,3 +1,9 @@
+# Integrantes:
+Anna Luiza Carvalhaes - 573330
+Gabriela Batista - 573583
+kethelyn Oliveira - 574016
+Samara Carvalho - 573666
+
 # Sistema Inteligente de Gerenciamento de Recarga de Veículos Elétricos (VEs)
 ### Protótipo funcional — Sprint 1
 **Disciplina:** CHALLENGE — Python e Energias Renováveis
@@ -7,7 +13,7 @@
 
 ## 1. Visão geral da solução
 
-O sistema proposto gerencia sessões de recarga de veículos elétricos em
+O sistema gerencia sessões de recarga de veículos elétricos em
 pontos de recarga (EVSE — *Electric Vehicle Supply Equipment*) instalados em
 estacionamentos de prédios comerciais. Ele:
 
